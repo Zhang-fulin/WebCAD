@@ -1,0 +1,31 @@
+{
+  "name": "WebCAD",
+  "version": "1.0.0",
+  "description": "- 🥳 2021-11-23 找点事情做做",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "start": "webpack serve --open --mode development --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zhang-fulin/WebCAD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zhang-fulin/WebCAD/issues"
+  },
+  "homepage": "https://github.com/Zhang-fulin/WebCAD#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.2",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  }
+}

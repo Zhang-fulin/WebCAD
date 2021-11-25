@@ -15,15 +15,33 @@ module.exports = {
     rules: [
       {
         test: /\.ts$/,
-        use: ['ts-loader'],
+        use: [
+          // {
+          //   loader: 'babel-loader',
+          //   options:{
+          //     presets:[
+          //       "@babel/preset-env",
+          //       {
+          //         targets:{
+          //           'chrome':'88'
+          //         },
+          //         "corejs":'3',
+          //         "useBuiltIns":'usage '
+          //       }
+          //     ]
+          //   }
+          // },
+          'ts-loader'
+        ],
         exclude: /node_modules/
       },
     ],
   },
-  plugins:[
-      new HtmlWebpackPlugin({
-          template:"./src/index.html"
-      }),
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: "./src/index.html"
+    }),
   ],
 
   resolve: {

@@ -1,10 +1,12 @@
 class Point extends Shape {
-    private x: number = 0;
-    private y: number = 0;
-    public constructor (x:number, y:number) {
+    private m_x: number;
+    private m_y: number;
+    private m_z: number;
+    public constructor (x:number, y:number, z:number) {
         super();
-        this.x = x;
-        this.y = y;
+        this.m_x = x;
+        this.m_y = y;
+        this.m_z = z;
         this.setType(ShapeType.PointType);
     }
 }

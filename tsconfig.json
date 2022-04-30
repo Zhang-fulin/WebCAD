@@ -2,6 +2,8 @@
     "compilerOptions": {
         "module": "ES2015",
         "target": "ES2015",
-        "strict": true
+        "strict": true,
+        "jsx": "preserve",
+        "moduleResolution": "node"
     }
 }

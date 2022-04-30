@@ -1,3 +1,4 @@
+import { Point } from './point'
 class Line extends Shape {
     private m_point1:Point;
     private m_point2:Point;

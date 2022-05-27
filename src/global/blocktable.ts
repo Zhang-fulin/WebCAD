@@ -5,4 +5,10 @@ export class BlockTable{
     public constructor() {
 
     }
+    public add(blockrecord:BlockRecord) {
+        this.m_blockRecordTable.push(blockrecord);
+    }
+    public delete(blockrecord:BlockRecord) {
+        
+    }
 }

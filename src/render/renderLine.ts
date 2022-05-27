@@ -26,10 +26,10 @@ export class renderLine {
             this.line = new paper.Path.Line(new paper.Point(0, 0), 
             new paper.Point(100, 100));
             if (!this.params.layer) {
-                this.line.strokeColor = new paper.Color(1,0,0);
-                this.line.strokeWidth = 10;
                 Canvas.getInstance().paperScope.project.activeLayer.addChild(this.line)
-
+            }
+            if (!this.params.lineWidth) {
+                
             }
         }
     }
